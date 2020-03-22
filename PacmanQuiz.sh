@@ -96,7 +96,7 @@ score() {
 
 print() {
     score
-    echo -e "Score: $score% \nResult: $successMessage \n\nNumber of questions: $numOfQuestions \nNumber of correct answers: $correctCount \n"
+    echo -e "\nScore: $score% \nResult: $successMessage \n\nNumber of questions: $numOfQuestions \nNumber of correct answers: $correctCount \n"
 }
 
 print

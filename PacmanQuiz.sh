@@ -35,6 +35,7 @@ declare -A qna5=(
 echo -e "\n\U1F4BB Test your pamac knowledge by typing commands. \nFor each quiz question, you must enter the correct command. After the quiz is completed the result will be displayed. \nTo start the quiz type "start" and then press enter. Otherwise, the execution will be terminated.\n"
 read -p "Type start and press enter: " START
 if [ "$START" = "start" ]; then
+	clear
     declare -n qna
     for qna in ${!qna@}; do
     ((numOfQuestions=$numOfQuestions+1))

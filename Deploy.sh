@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 mainInfo(){
-	read -p "Github username: " username
+    read -p "Github username: " username
     read -p "Repository name: " repo
     read -p "Commit message: " commit
     echo "# $repo" >> README.md
@@ -20,11 +20,11 @@ deploy(){
 }
 
 menu() {
-	clear
-	echo "┌───────────────────────────────────────┐"
-	echo "│  ≡  GitHub Deployment        -  +  x  │"
+    clear
+    echo "┌───────────────────────────────────────┐"
+    echo "│  ≡  GitHub Deployment        -  +  x  │"
     echo "├───────────────────────────────────────┤"
-	echo "│  1. Deploy                            │"
+    echo "│  1. Deploy                            │"
     echo "│                                       │"
     echo "│  2. Deploy (With markdown generator)  │"
     echo "│                                       │"
@@ -36,16 +36,16 @@ menu() {
 options(){
     local option
     read -p "Option 1-3: " option
-	case $option in
-		1) deploy ;;
-		2) deployMDGen ;;
-		3) exit 1;;
-		*) echo -e "Invalid input" && sleep 1
-	esac
+    case $option in
+    	1) deploy ;;
+    	2) deployMDGen ;;
+    	3) exit 1;;
+    	*) echo -e "Invalid input" && sleep 1
+    esac
 }
                                            
 while true 
 do
     menu
-	options
+    options
 done

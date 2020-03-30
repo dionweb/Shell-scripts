@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 echo "Download .dotfiles..."
 
-
 git clone --bare https://github.com/dionweb/Dotfiles $HOME/.dotfiles
 function dotfile {
    /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@

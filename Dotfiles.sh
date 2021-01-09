@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+
+# Script for setting/downloading dotfiles
+
 echo "Download .dotfiles..."
 
 git clone --bare https://github.com/dionweb/Dotfiles $HOME/.dotfiles

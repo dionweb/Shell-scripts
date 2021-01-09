@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+
+# Sript to clean Arch systems 
+
 pkgCache=$(du -sh /var/cache/pacman/pkg/ | cut -f1)         # Get the size of pkg cache without path.
 homeCache=$(du -sh ~/.cache/ | cut -f1)                     # Get the size of home cache without path.
 numOfUnused=$(pacman -Qtdq | wc -l)                         # Get the number of unused packages.

@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+
+# Script to deploy a project to Github. WIP
+
 mainInfo(){
     read -p "Github username: " username
     read -p "Repository name: " repo

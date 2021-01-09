@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
+
+# Script to disable GNOME Tracker
+
 tracker daemon -t
 cd ~/.config/autostart
 cp -v /etc/xdg/autostart/tracker-*.desktop ./

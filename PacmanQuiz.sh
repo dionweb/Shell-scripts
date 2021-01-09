@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+# Pacman knowledge mini-quiz created for fun
+
 RED="\033[1;31m"
 GREEN="\033[1;32m"
 NOCOLOR="\033[0m"

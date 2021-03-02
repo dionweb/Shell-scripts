@@ -13,12 +13,10 @@ NOCOLOR="\033[0m"
 
 echo "$STR"
 echo -e "\e[1mStep 1: Clean pkg cache \e[0m"
-sleep 1
 
 echo "$STR"
 
 echo -e "The size of packages is \e[1m$pkgCache\e[0m".
-sleep 1
 
 while true
 do
@@ -45,12 +43,10 @@ done
 
 echo "$STR"
 echo -e "\e[1mStep 2: Remove unused packages \e[0m"
-sleep 1
 
 echo "$STR"
 
 echo -e "You have \e[1m$numOfUnused\e[0m unused packages."
-sleep 1
 
 if [ $numOfUnused -eq 0 ]
 then
@@ -81,12 +77,10 @@ fi
 
 echo "$STR"
 echo -e "\e[1mStep 3: Clean Home cache \e[0m"
-sleep 1
 
 echo "$STR"
 
 echo -e "The size of Home cache is \e[1m$homeCache\e[0m".
-sleep 1
 
 while true
 do
